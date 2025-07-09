@@ -21,72 +21,134 @@ a:-webkit-any-link {
     color: #404040; /* IMPORTANT: make this the same as above! ^^^ */
 }
 
-/* === MAIN CONTAINER BOX (THE CARD) === */
-#container {
-    max-width: 400px; /* 💡 Change this to make the card bigger/smaller */
-    background-color: #f2f2f2; /* 🎨 Card background color */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 🎨 Adds a soft shadow */
+/* === HEADER CONTAINER BOX (THE CARD) === */
+#head_container {
+    max-width: 650px; /* 💡 Change this to make the card bigger/smaller */
+    max-height: 400px;
+    background-color: rgba(0, 0, 0, 0); /* 🎨 Card background color */
     border-radius: 10px; /* 💡 Rounded corners */
-    margin: 15px auto;
-    padding: 25px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    margin-right: calc(60%);
 }
 
-/* === "HI, MY NAME IS" HEADING === */
+/* === MAIN CONTAINER BOX === */
+#body_container {
+    max-width: 650px; /* 💡 Change this to make the card bigger/smaller */
+    height: 240px;
+    background-color: #1a1a1a7a;
+    border-radius: 10px; /* 💡 Rounded corners */
+    margin: 5px auto;
+    margin-left: calc(3%);
+}
+
+/* === "Welcome Traveller" HEADING === */
 #name-intro {
-    font-family: 'Courier New', Courier, monospace; /* 💡 Change the font family for the intro text */
-    color: #333333; /* 🎨 Intro text color */
-    margin-bottom: 15px;
+    font-family: 'Brush Script MT', cursive, monospace; /* 💡 Change the font family for the intro text */
+    color: #fcbb66; /* 🎨 Intro text color */
+    font-size: 70px;
+    margin-top: 100px;
 }
 
 /* === PROFILE PICTURE STYLE === */
 #profile-pic {
-    width: 90%; /* 💡 Resize profile picture here */
+    width: 35%; /* 💡 Resize profile picture here */
     border-radius: 10px; /* 💡 Rounds the corners of the profile picture */
     margin-bottom: 15px;
+    float: left;
+    margin-right: 15px;
+}
+
+/* TYPEWRITER STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; 
+  animation: 
+    typing 2s steps(17, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  30% { border-color: orange }
 }
 
 /* === YOUR NAME (BIG TEXT) === */
 #name {
-    font-size: 64px; /* 💡 Change this to make your name bigger/smaller */
-    color: #1a1a1a; /* 🎨 Name text color */
-    margin-bottom: 15px;
+    font-family: 'Brush Script MT', cursive, monospace;
+    font-size: 80px; /* 💡 Change this to make your name bigger/smaller */
+    color: black; /* 🎨 Name text color */
+    margin-bottom: 5px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 /* === HOMETOWN TEXT === */
 #hometown {
-    color: #4d4d4d; /* 🎨 Hometown text color */
-    margin-bottom: 10px;
+    color: #6500b8; /* 🎨 Hometown text color */
+    margin-bottom: 15px;
 }
 
 /* === EMAIL SECTION === */
 #email {
-    color: #1a1a1a;
-    margin-bottom: 15px;
+    color: white;
+    margin-bottom: 5px;
 }
 
 #email-link { /* The link to your email */
-    color: #1a1a1a; /* 🎨 Change the color of the email link */
+    color: #6500b8; /* 🎨 Change the color of the email link */
     text-decoration: underline; 
 }
 
 #email-link:hover { /* Change the color of the link when you put your mouse over it */
-    color: #4d4d4d; /* 🎨 Change the hover color of the email link */
+    color: white; /* 🎨 Change the hover color of the email link */
+}
+
+/* === LINKEDIN SECTION === */
+#linkedin {
+    color: white;
+}
+
+#linkedin-link { /* The link to your linkedin */
+    color: #6500b8; /* 🎨 Change the color of the linkedin link */
+    text-decoration: underline; 
+}
+
+#linkedin-link:hover { /* Change the color of the link when you put your mouse over it */
+    color: white; /* 🎨 Change the hover color of the linkedin link */
 }
 
 /* === BIO SECTION === */
 #bio {
     font-size: 20px; /* 💡 Change the size of your bio text */
     margin: 10px;
+    color: white;
+    float: left;
 }
 
 #fun-fact {
     font-size: 15px; /* 💡 Change the size of the fun fact text */
+    color: white;
     margin: 10px;
+    float: left;
 }
 
 /* === BACKGROUND IMAGE STYLE === */
 #background-img {
-    background-image: url("[PUT A URL HERE !!!]");
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/038/698/806/original/andrew-parker-x-670c98e6fbfdeffeba2b5778618bf747-f8743466-1280.gif?1623812827");
 }
 
 
