@@ -28,9 +28,8 @@ a:-webkit-any-link {
     background-color: rgba(0, 0, 0, 0); /* 🎨 Card background color */
     border-radius: 10px; /* 💡 Rounded corners */
     margin: 20px auto;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
-    margin-right: calc(60%);
 }
 
 /* === MAIN CONTAINER BOX === */
@@ -39,8 +38,7 @@ a:-webkit-any-link {
     height: 240px;
     background-color: #1a1a1a7a;
     border-radius: 10px; /* 💡 Rounded corners */
-    margin: 5px auto;
-    margin-left: calc(3%);
+    margin: auto;
 }
 
 /* === "Welcome Traveller" HEADING === */
@@ -48,7 +46,7 @@ a:-webkit-any-link {
     font-family: 'Brush Script MT', cursive, monospace; /* 💡 Change the font family for the intro text */
     color: #fcbb66; /* 🎨 Intro text color */
     font-size: 70px;
-    margin-top: 100px;
+    margin:auto;
 }
 
 /* === PROFILE PICTURE STYLE === */
@@ -65,7 +63,7 @@ a:-webkit-any-link {
   color: #fff;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.1em solid orange; /* The typwriter cursor */
+  border-right: 0.1em solid #fcbb66; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.1em; 
@@ -82,8 +80,8 @@ a:-webkit-any-link {
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  30% { border-color: orange }
+    from, to { border-color: transparent }
+    20% { border-color: #fcbb66 }
 }
 
 /* === YOUR NAME (BIG TEXT) === */
@@ -104,7 +102,7 @@ a:-webkit-any-link {
 
 /* === EMAIL SECTION === */
 #email {
-    color: white;
+    color: black;
     margin-bottom: 5px;
 }
 
@@ -114,12 +112,12 @@ a:-webkit-any-link {
 }
 
 #email-link:hover { /* Change the color of the link when you put your mouse over it */
-    color: white; /* 🎨 Change the hover color of the email link */
+    color: black; /* 🎨 Change the hover color of the email link */
 }
 
 /* === LINKEDIN SECTION === */
 #linkedin {
-    color: white;
+    color:  black;
 }
 
 #linkedin-link { /* The link to your linkedin */
@@ -128,7 +126,7 @@ a:-webkit-any-link {
 }
 
 #linkedin-link:hover { /* Change the color of the link when you put your mouse over it */
-    color: white; /* 🎨 Change the hover color of the linkedin link */
+    color: black; /* 🎨 Change the hover color of the linkedin link */
 }
 
 /* === BIO SECTION === */
@@ -157,41 +155,68 @@ a:-webkit-any-link {
 
 
 
+/* --- Pages --- */
 
+.pages {
+    display: grid;
+    margin: auto;
+    position: absolute;
+    top:20;
+    bottom:20;
+    left: 0;
+    right: 0;
+}
 
+.page {
+    grid-column: 1;
+    grid-row: 1;
 
+    border-style: solid;
+    display: block;
+    background-image: url("cami.png");
 
+    transform: scale(2);
+    width: 10vw;
+    height: 10vh;    
+    margin:auto;
 
+    text-align: center;
+    font-size: 5px;
 
+    overflow:auto;
 
+    transition:
+        transform 1s ease, 
+        width 1s ease, 
+        height 1s ease;
+}
 
+.zoomed-in {
+    transform: scale(7);
+}
 
+.buttons {
+    margin-top:400px;
+    margin-left: 15%;
+ }
 
+ .button-main {
+    margin-left: 0px;
+    margin-right: 10%;
+    font-size: 30px;
+    float: left;
+    width: 10vw;
+    height: 10vh;
+    background-color: white;
+    border-style: groove;
+    border-width: 10px;
+    border-radius: 15px;
+ }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ .button-sub {
+    width: 20%;
+    font-size: 5px;
+ }
 
 
 

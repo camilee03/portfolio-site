@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cami's Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="cami.png"/>
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
+    <noscript>To use this site, please enable JavaScript.</noscript>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="scripts.js" defer></script>
+    
     <div id="background-img"></div>
 
     <div id="head_container">
@@ -23,15 +29,78 @@
 
         <h2 id="hometown">Oro Valley, AZ</h2>
 
-        <h3 id="email">
-            <b>Email: </b>
-            <a href="mailto:cami.lee@fastly.com" id="email-link">cami.lee@fastly.com</a>
+        <h3> Something something main thing
+            More etc etc
         </h3>
 
-        <h3 id="linkedin">
-            <b>LinkedIn: </b>
-            <a href="https://www.linkedin.com/in/camilee03/" id="linkedin-link">camilee03</a>
-        </h3>
+        <div class="pages">
+            <!-- Home Page -->
+            <div class="page" id="home" style="font-size:10px">
+                <a href="#contact" class="zoom">Click to Expand</a>
+            </div>
+
+            <!-- Contact Page -->
+            <div class="page" id="contact">
+                <h2>Contact</h2>
+
+                <div id="linkedin">
+                    <b>LinkedIn: </b>
+                    <a href="https://www.linkedin.com/in/camilee03/" id="linkedin-link">camilee03</a>
+                </div>
+                <div id="email">
+                    <b>Email: </b>
+                    <a href="mailto:cami.lee@fastly.com" id="email-link">cami.lee@fastly.com</a>
+                </div>
+            </div>
+
+            <!-- Projects Page -->
+            <div class="page" id="projects">
+                <h2>Projects</h2>
+                Content of page 3 goes right here here here.
+
+                <br>
+                <br>
+                <h3>CPI Captsone</h3>
+
+                Mechanics:
+                <ul style="text-align: left"><li>Room shape generation</li>
+                    <li>Object generation within room walls</li>
+                    <li>Pathfinding between doors</li>
+                    <li>Unique task generation</li></ul> 
+                <br>
+
+                <h3>Honors Thesis</h3>
+                Goal: Develop a character model using llama LLM whose actions and
+                personality are influenced by their environment.
+                <button class="button-sub">Press to View</button> 
+                <br>
+                <br>
+
+                <h3>Unstable Star</h3>
+                Mechanics:
+
+                <br>
+                <br>
+
+                <h3>lsdkfj</h3>
+                Mechanics:
+                
+                <br>
+                and More <br>
+                and More  <br>
+                and More <br>
+                and More <br>
+                and More <br>
+                and More <br>
+            </div>
+
+            <!-- About Me Page -->
+            <div class="page" id="about-me">
+                <h2>About Me</h2>
+                My name is Cami Lee. I am a computer science student learning new methods of code optimization by focusing on AI, game development, and efficiency.
+            </div>
+
+        </div>
 
         <p id="bio">
             <b> Biography: </b>
@@ -43,5 +112,13 @@
             Fun Fact: I have published a game on Steam. 
         </p>
     </div>
+
+    <div class="buttons" id="button">
+        <button class="button-main slide" href="#contact">Contact</button>  
+        <button class="button-main slide" href="#projects">Projects</button>>
+        <button class="button-main slide" href="#about-me">About Me</button>
+        <button class="button-main zoom" href="#">Back</button>
+    </div>
+
 </body>
 </html>
