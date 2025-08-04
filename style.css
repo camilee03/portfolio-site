@@ -2,6 +2,7 @@
 body {
     font-family: 'Trebuchet MS', Arial, sans-serif; /* 💡 Change the font family for the entire page */
     background-color: #bfbfbf; /* 🎨 You can change the entire page background color here */
+    overflow-y: hidden;
 }
 
 /* === PARAGRAPH STYLE === */
@@ -21,6 +22,24 @@ a:-webkit-any-link {
     color: #404040; /* IMPORTANT: make this the same as above! ^^^ */
 }
 
+h1 {
+    font-family: 'Courier New', Arial, Helvetica, monospace;
+}
+
+h2 {
+    font-family: 'Courier New', Arial, Helvetica, monospace;
+    color:white;
+}
+
+h3 {
+    font-family: 'Courier New', Arial, Helvetica, monospace;
+}
+
+ul {
+    text-align: left;
+    margin-left: -30px;
+}
+
 /* === HEADER CONTAINER BOX (THE CARD) === */
 #head_container {
     max-width: 650px; /* 💡 Change this to make the card bigger/smaller */
@@ -30,15 +49,6 @@ a:-webkit-any-link {
     margin: 20px auto;
     padding: 0px;
     text-align: center;
-}
-
-/* === MAIN CONTAINER BOX === */
-#body_container {
-    max-width: 650px; /* 💡 Change this to make the card bigger/smaller */
-    height: 240px;
-    background-color: #1a1a1a7a;
-    border-radius: 10px; /* 💡 Rounded corners */
-    margin: auto;
 }
 
 /* === "Welcome Traveller" HEADING === */
@@ -88,21 +98,15 @@ a:-webkit-any-link {
 #name {
     font-family: 'Brush Script MT', cursive, monospace;
     font-size: 80px; /* 💡 Change this to make your name bigger/smaller */
-    color: black; /* 🎨 Name text color */
+    color: white; /* 🎨 Name text color */
     margin-bottom: 5px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
 }
 
-/* === HOMETOWN TEXT === */
-#hometown {
-    color: #6500b8; /* 🎨 Hometown text color */
-    margin-bottom: 15px;
-}
-
 /* === EMAIL SECTION === */
 #email {
-    color: black;
+    color: white;
     margin-bottom: 5px;
 }
 
@@ -112,12 +116,12 @@ a:-webkit-any-link {
 }
 
 #email-link:hover { /* Change the color of the link when you put your mouse over it */
-    color: black; /* 🎨 Change the hover color of the email link */
+    color: white; /* 🎨 Change the hover color of the email link */
 }
 
 /* === LINKEDIN SECTION === */
 #linkedin {
-    color:  black;
+    color: white;
 }
 
 #linkedin-link { /* The link to your linkedin */
@@ -126,23 +130,9 @@ a:-webkit-any-link {
 }
 
 #linkedin-link:hover { /* Change the color of the link when you put your mouse over it */
-    color: black; /* 🎨 Change the hover color of the linkedin link */
+    color: white; /* 🎨 Change the hover color of the linkedin link */
 }
 
-/* === BIO SECTION === */
-#bio {
-    font-size: 20px; /* 💡 Change the size of your bio text */
-    margin: 10px;
-    color: white;
-    float: left;
-}
-
-#fun-fact {
-    font-size: 15px; /* 💡 Change the size of the fun fact text */
-    color: white;
-    margin: 10px;
-    float: left;
-}
 
 /* === BACKGROUND IMAGE STYLE === */
 #background-img {
@@ -161,29 +151,21 @@ a:-webkit-any-link {
     display: grid;
     margin: auto;
     position: absolute;
-    top:20;
-    bottom:20;
+
+    overflow-y: hidden;
+
+    background-image: url("computer.png");
+    background-size: cover;
+    background-position: center;
+
+    top:0;
+    bottom:0;
     left: 0;
     right: 0;
-}
-
-.page {
-    grid-column: 1;
-    grid-row: 1;
-
-    border-style: solid;
-    display: block;
-    background-image: url("cami.png");
-
-    transform: scale(2);
     width: 10vw;
-    height: 10vh;    
-    margin:auto;
+    height: 14vh;
 
-    text-align: center;
-    font-size: 5px;
-
-    overflow:auto;
+    transform: scale(1.5);
 
     transition:
         transform 1s ease, 
@@ -191,31 +173,59 @@ a:-webkit-any-link {
         height 1s ease;
 }
 
+
+.page {
+    grid-column: 1;
+    grid-row: 1;
+
+    color:white;
+
+    display: block;
+
+    width: 53%;
+    height: 55%;   
+    margin:auto;
+    margin-top: 10.5%; 
+
+    scroll-margin-top: 100px;
+
+    text-align: center;
+    font-size: 3px;
+
+    overflow: scroll;
+    scrollbar-width: thin;
+}
+
 .zoomed-in {
-    transform: scale(7);
+    transform: scale(9);
 }
 
 .buttons {
-    margin-top:400px;
-    margin-left: 15%;
+    margin-top:20.5%;
+    margin-left: 24%;
  }
 
  .button-main {
     margin-left: 0px;
-    margin-right: 10%;
-    font-size: 30px;
+    margin-right: 5%;
+
+    z-index:1;
+    position:relative;
+
+    font-size: 25px;
+    color: black;
     float: left;
     width: 10vw;
     height: 10vh;
-    background-color: white;
-    border-style: groove;
+
+    background-color: rgb(190, 156, 131);
+    
     border-width: 10px;
     border-radius: 15px;
  }
 
  .button-sub {
-    width: 20%;
-    font-size: 5px;
+    font-size: 3px;
  }
 
 

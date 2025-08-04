@@ -9,9 +9,9 @@ $(document).ready(function () {
     // Check which page we are currently on
     if (hash) { // Any other page should be already zoomed in
         document.getElementById(hash.substring(1)).style.visibility = 'visible'; 
-        $(".page").css({transition: "none"}); // briefly get rid of the transition
-        $(".page").addClass("zoomed-in").show();
-        $(".page").css({transition: "transform 1s ease, width 1s ease, height 1s ease"});
+        $(".pages").css({transition: "none"}); // briefly get rid of the transition
+        $(".pages").addClass("zoomed-in").show();
+        $(".pages").css({transition: "transform 1s ease, width 1s ease, height 1s ease"});
 
         document.getElementById("button").style.visibility = 'visible';
     } 
@@ -25,7 +25,7 @@ $(document).ready(function () {
     // zoom in and out 
     $(".zoom").on("click", function (event) {
         event.preventDefault();
-        const $current = $(".page");
+        const $current = $(".pages");
         let targetId = $(this).attr("href");
 
         let visibleId = $(this).attr("href");
@@ -61,7 +61,7 @@ $(document).ready(function () {
             if (showButton) {document.getElementById("button").style.visibility = 'visible'; }
             
             window.location.href = targetId;
-            }, 500);
+            }, 800);
     });
 
     // slide left and right
