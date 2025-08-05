@@ -1,6 +1,7 @@
-# Portfolio-Template
-A temporary repository to showcase website-building for the boys and girls session. 
+# Portfolio
+This repository contains the code for developing my portfolio website. 
 
-
-## Website Purpose
-To showcase how to create a website on GitHub Pages using html and css. 
+## Key Points
+- Showcases my skills writing code in an observable format
+- Allows me to experiment with html and css code
+- Useful for resume building
